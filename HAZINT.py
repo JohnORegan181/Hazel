@@ -137,7 +137,7 @@ class Ev:
                 stack.append(int(tok))
             elif tok in self.vars:
                 stack.append(self.vars[tok])
-            elif tok in ['+', '-', '*', '/', '%', '==', '!=', '>=', '<=']:
+            elif tok in ['+', '-', '*', '/', '^', '%', '==', '!=', '>=', '<=']:
                 if len(stack) < 2:
                     print(f"[RuntimeError] Not enough values on stack for '{tok}'")
                     return 0
@@ -149,6 +149,7 @@ class Ev:
                     if tok == '+': stack.append(lhs + rhs)
                     elif tok == '-': stack.append(lhs - rhs)
                     elif tok == '*': stack.append(lhs * rhs)
+                    elif tok == '^': stack.append(lhs ** rhs)
                     elif tok == '/':
                         if rhs == 0:
                             print("[MathError] Division by zero")
@@ -186,7 +187,7 @@ class Ev:
                     if idx + 1 < len(toks):
                         varname = toks[idx + 1]
                         if varname in self.vars:
-                            print(self.vars[varname])
+                            print(str(self.vars[varname]))
                         else:
                             print(f"[undefined variable: {varname}]")
                     else:

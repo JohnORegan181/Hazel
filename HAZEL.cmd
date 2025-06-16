@@ -22,7 +22,7 @@ if /I  "%1"=="--licence" (
 )
 
 if /I  "%1"=="ver" (
-    echo 1.0.0
+    echo 1.0.1
     exit /b
 )
 
@@ -49,11 +49,12 @@ if /I  "%1"=="intro" (
 )
 
 if /I  "%1"=="changelogs" (
-    echo Hazel released on version 1.0.0 .
+    echo Hazel version 1.0.1 .
     echo changes:[
-    echo added EXEND,
-    echo added SLEEP,
-    echo released Hazel.
+    echo - Changed .bat to files to .cmd files
+    echo - Added a example Hazel program (Example.haz)
+    echo - Added exponentiation operator (^)
+    echo - Made TOUTP turn its input into a string
     echo ]
     exit /b
 )

@@ -1,0 +1,6 @@
+cmmt = 'This program squares a number that is inputted.'
+r = "Type a number and this program will square it."
+TOUTP r
+INP x
+y = x 2 ^
+TOUTP y
