@@ -69,4 +69,3 @@ if /I  "%1"=="--help" (
 
 
 REM Launch Hazel interpreter with file path
-python HAZINT.py %1
