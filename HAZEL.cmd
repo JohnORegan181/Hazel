@@ -50,10 +50,10 @@ if /I  "%1"=="intro" (
 
 if /I  "%1"=="changelogs" (
     echo Hazel version 1.0.1 .
-    echo changes:[
+    echo changes: [
     echo - Changed .bat to files to .cmd files
-    echo - Added a example Hazel program (Example.haz)
-    echo - Added exponentiation operator (^)
+    echo - Added a example Hazel program which is named Example.haz
+    echo - Added exponentiation operator which is "^"
     echo - Made TOUTP turn its input into a string
     echo ]
     exit /b
